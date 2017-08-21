@@ -1,19 +1,20 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<script type="text/javascript">
-		function getTotal(){
-			var aSubTotal = document.getElementById("a-quantity").value * 10;
-			var bSubTotal = document.getElementById("b-quantity").value * 15;
-			var cSubTotal = document.getElementById("c-quantity").value * 20;
+			function getTotal(){
+				var aSubTotal = document.getElementById("a-quantity").value * 10;
+				var bSubTotal = document.getElementById("b-quantity").value * 15;
+				var cSubTotal = document.getElementById("c-quantity").value * 20;
 
-			document.getElementById("a-subtotal").innerHTML = aSubTotal;
-			document.getElementById("b-subtotal").innerHTML = bSubTotal;
-			document.getElementById("c-subtotal").innerHTML = cSubTotal;
+				document.getElementById("a-subtotal").innerHTML = aSubTotal;
+				document.getElementById("b-subtotal").innerHTML = bSubTotal;
+				document.getElementById("c-subtotal").innerHTML = cSubTotal;
 
-			document.getElementById("quantity").innerHTML = +document.getElementById("a-quantity").value + +document.getElementById("b-quantity").value + +document.getElementById("c-quantity").value;
+				document.getElementById("quantity").innerHTML = +document.getElementById("a-quantity").value + +document.getElementById("b-quantity").value + +document.getElementById("c-quantity").value;
 
-			document.getElementById("total").innerHTML = +aSubTotal + +bSubTotal + +cSubTotal;
-		}
+				document.getElementById("total").innerHTML = +aSubTotal + +bSubTotal + +cSubTotal;
+			}
 		</script>
 	</head>
 	<body>

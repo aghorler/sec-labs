@@ -21,17 +21,19 @@
 
 		<h2>I hate CSS. Here's a Shopping Cart that auto-updates.</h2>
 
-		<p>
-			Product A | $10 | <input type="number" min="0" max="5" id="a-quantity" onchange="getTotal()"> | <span id="a-subtotal">0</span>
-		</p>
+		<form action="process.php" method="POST">
+			<p>
+				Product A | $10 | <input type="number" min="0" max="5" id="a-quantity" onchange="getTotal()"> | <span id="a-subtotal">0</span>
+			</p>
 
-		<p>
-			Product B | $15 | <input type="number" min="0" max="5" id="b-quantity" onchange="getTotal()"> | <span id="b-subtotal">0</span>
-		</p>
+			<p>
+				Product B | $15 | <input type="number" min="0" max="5" id="b-quantity" onchange="getTotal()"> | <span id="b-subtotal">0</span>
+			</p>
 
-		<p>
-			Product C | $20 | <input type="number" min="0" max="5" id="c-quantity" onchange="getTotal()"> | <span id="c-subtotal">0</span>
-		</p>
+			<p>
+				Product C | $20 | <input type="number" min="0" max="5" id="c-quantity" onchange="getTotal()"> | <span id="c-subtotal">0</span>
+			</p>
+		</form>
 
 		<p>
 			Total : <span id="quantity">0</span> | <span id="total">0</span>
