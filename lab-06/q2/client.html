@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<h2>Lab 6 Demo 2</h2>
+
+		<form action="server.php" method="POST">
+			Enter: <input type="text" name="input" id="input">
+			<br/><br/>
+			<button type="submit" onclick="hash()">Submit</button>
+		</form>
+
+		<script src="js/sha256.js"></script>
+
+		<script type="text/javascript">
+			function hash(){
+				var input = document.getElementById('input').value;
+				var hash = SHA256.hash(input);			
+				document.getElementById("input").value = hash;
+			}
+		</script>
+	</body>
+</html>

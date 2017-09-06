@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<h1>Lab 6 Demo 1</h1>
+
+		<input name="input" id="input" type="text" >
+		<br/><br/>
+		<button type="button" onclick="hash()">Hash</button>
+		<br/><br/>
+		
+		<h3>Hash value</h3>
+		<p name="hash_value" id="hash_value"></p>
+		
+		<script src="js/sha256.js"></script>
+		
+		<script type="text/javascript">
+			function hash(){
+				var input = document.getElementById('input').value;
+				var hash = SHA256.hash(input);
+				document.getElementById('hash_value').innerHTML = hash;
+			}
+		</script>
+	</body>
+</html>
