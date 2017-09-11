@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h2>Lab 7 Client</h2>
+
+		<form action="server.php" method="POST">
+			Enter a Message: <input id="message" name="message" type="text">
+			<br><br>
+			Enter a DES encryption key: <input id="key" type="password">
+			<br><br>
+			<button type="submit" onclick="encrypt()">Submit</button>
+		</form>
+		
+		<script type="text/javascript" src="js/des.js"></script>
+		<script type="text/javascript">
+			function encrypt(){
+				var message = document.getElementById("message").value;
+
+				var key = document.getElementById("key").value;
+
+				var encrypted = javascript_des_encryption(key, message);
+
+				document.getElementById("message").value = encrypted;	
+			}
+		</script>
+	</body>
+</html>
