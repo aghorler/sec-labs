@@ -9,7 +9,12 @@
 * Please note that, by publishing this work, I am explicitly **NOT** facilitating or allowing plagiarism, and I expressly forbid this work to be used in such a manner. 
 
 # sec-labs
+
 Secure Electronic Commerce (INTE1071) labs as part of the Bachelor of Information Technology (BP162) at RMIT University in S2 2017.
+
+**Disclaimer**
+
+These lab tasks were built to specification. I would not necessarily implement the solutions and methods used in this assignment in my personal work.
 
 ## Plagiarism notice
 
